@@ -4,7 +4,110 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-   
+     <style>
+        .container {
+            width: 100%; margin:0 auto; background: white; min-height: 100%;
+        }
+        .container__inner {
+            padding-top: 19px; height: 50px; margin: 0 auto; width: 100% 
+        }
+        .remios_Logo_wrapper {
+            float: left; margin-top: 17px;
+        }
+        .header_button_r4ight_div{
+            float: right;
+        }
+        .banner_wrapper{
+            min-height:200px;  background-image: linear-gradient(rgb(0, 0, 0 , 0.7), rgb(0, 0, 0 , 0.7)), url('https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg');
+            background-position: center;
+            background-repeat no-repeat;
+            background=size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .banner_wrapper_para{
+            color: #FFBB00;
+            font-family: Montserrat;
+            font-style: italic !important;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 100;
+            
+        }
+        .salutation_wrapper{
+            background-color: white; padding: 24px 34px; font-size: 157x; font-family: 'Montserrat', sans-serif; font-weight: bold; color: #1A3365; display: flex; flex-direction: column; align-items: center;
+        }
+        .email_body{
+            width: 100%; text-align: justify;
+        }
+        .salutation_text{
+            font-size: 22px; font-weight: 100; margin-bottom: 30px;
+        }
+        .salutation_name{
+            font-weight: 800
+        }
+        .email_body_header {
+            color: #000000; font-weight: 100;
+        }
+        .email__body__text{
+            color: #000000; font-weight: 100;
+        }
+        .email__body__text{
+            color: #000000; font-weight: 100;
+        }
+        .anchor_link{
+            word-break: break-all;    font-weight: 100
+        }
+        .button_wrapper{
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .or_text{
+            font-weight: bold
+        }
+        .button_text{
+            background-color: #1A3365; color: #FFFFFF; padding: 10px 20px; border-radius: 5px;font-family: 'Montserrat';
+        }
+        .footer_wrapper {
+            background: #1A3365
+        }
+    
+        .footer_container{
+            display: flex; flex-direction: column; align-items: center; justify-content: center
+        }
+        .remis_logo_container{
+            margin-top: 30px
+        }
+        .footer_contact_us{
+            text-align: center ;color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;margin: 0px; margin-top: 40px
+        }
+        .line_div {
+            width: 100px;
+            height: 4px;
+            margin: 0 auto;
+            background: #FFBB00;
+        }
+        .address_div {
+            text-align: center ; color: white; margin-top: 40px;font-weight: 100;
+        }
+        .social_media_header {
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;margin-top: 40px;    margin-bottom: 5px;
+        }
+        .social_media_header_line_div {
+            width: 110px;
+            height: 4px;
+            margin: 0 auto;
+            background: #FFBB00;
+        }
+        .social_media_links_container{
+            margin-top: 15px; text-align: center
+        }
+    </style>
   </head>
   <body>
 
@@ -19,38 +122,32 @@
           </div>
         </div>
          <div class="banner_wrapper">
-                <p class="bannet_wrapper_para">We got a Request to reset your password</p>
-
+            <p class="banner_wrapper_para">We got a Request to reset your password</p>
           </div>
          <div
         class="salutation_wrapper">
         <div class="email_body">
             <p class="salutation_text">Hello <span class="salutation_name">Eben,</span></p>
-            <p class="">We received a request to reset your password.</p>
-            <p style="color: #000000; font-weight: 100;">You can rest your password by using the link below.</p>
-            <a href="https://www.google.com"><p style="word-break: break-all;    font-weight: 100">https://www.google.com/search?q=fake+facebook+password+reset+email&rlz</p></a>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <p style="font-weight: bold">OR</p>
+            <p class="email__body__text">We received a request to reset your password.</p>
+            <p class="email__body__text">You can rest your password by using the link below.</p>
+            <a href="https://www.google.com"><p class="anchor_link">https://www.google.com/search?q=fake+facebook+password+reset+email&rlz</p></a>
+            <div class="button_wrapper">
+                <p class="or_text">OR</p>
                 <button
-                    style="background-color: #1A3365; color: #FFFFFF; padding: 10px 20px; border-radius: 5px;font-family: 'Montserrat';">Reset
+                    class="button_text">Reset
                     Password</button>
             </div>
         </div>
     </div>
-    <div style="background: #1A3365">
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
-            <div style="margin-top: 30px">
+    <div class="footer_wrapper">
+        <div class="footer_container">
+            <div class="remis_logo_container">
                 REMISLOGO
             </div>
-            <div style="">
-                <h3 style="text-align: center ;color: #FFFFFF;
-                    font-size: 20px;
-                    font-weight: 600;margin: 0px; margin-top: 40px">Contact Us</h3>
-                <div  style="width: 100px;
-                    height: 4px;
-                    margin: 0 auto;
-                    background: #FFBB00;"></div>
-                <div style="text-align: center ; color: white; margin-top: 40px;font-weight: 100;">
+            <div class="">
+                <h3 class="footer_contact_us">Contact Us</h3>
+                <div  class="line_div"></div>
+                <div class="address_div">
                     252, Herbert Macaulay way, <br>
                     Alagomeji, Sabo 
                     Yaba,
@@ -58,15 +155,10 @@
                 </div>
             </div>
             <div style="">
-                <h3 style=" color: #FFFFFF;
-                    font-size: 20px;
-                    font-weight: 600;margin-top: 40px;    margin-bottom: 5px;">Social Media</h3>
-                <div  style="width: 110px;
-                    height: 4px;
-                    margin: 0 auto;
-                    background: #FFBB00;"></div>
+                <h3 class="social_media_header">Social Media</h3>
+                <div  class="social_media_header_line_div"></div>
 
-                <div style="margin-top: 15px; text-align: center">
+                <div class="social_media_links_container">
                     FB
                     IG
                     TW
